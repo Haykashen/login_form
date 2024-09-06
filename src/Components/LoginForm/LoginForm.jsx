@@ -10,8 +10,7 @@ const LoginForm = () =>{
                 <h1>Login</h1>
                 <div className="input-box">
                     <MdEmail className="icon"/>
-                    <input type="email" placeholder="Email" required/>
-                    
+                    <input type="email" placeholder="Email" required/>                   
                 </div>
                 <div className="input-box">
                     <FaLock className="icon"/>
