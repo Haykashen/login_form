@@ -3,7 +3,7 @@ import './LoginForm.css';
 import { FaLock  } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-const LoginForm = ({ email, setEmail, password, setPassword,remenber,setRemenber}) =>{
+const LoginForm = ({ email, setEmail, password, setPassword,remember,setRemember}) =>{
     function changeEmail(event) {
         setEmail(event.target.value);
     }
@@ -12,8 +12,8 @@ const LoginForm = ({ email, setEmail, password, setPassword,remenber,setRemenber
         setPassword(event.target.value);
     }
 
-    function changeRemenber(event) {
-        setRemenber(event.target.value);
+    function changeRemember(event) {
+        setRemember(event.target.value);
     } 
 
     return(
@@ -29,7 +29,7 @@ const LoginForm = ({ email, setEmail, password, setPassword,remenber,setRemenber
                     <input type="password" placeholder="Password" value={password} onChange={changePassword} required/> 
                 </div> 
                 <div className="remember">                   
-                    <label><input type="checkbox" checked={remenber}  onChange={changeRemenber}/>Remember me</label>
+                    <label><input type="checkbox" checked={remember}  onChange={changeRemember}/>Remember me</label>
                     <a href="#">Forgot password?</a>
                 </div>  
                 <button type="submit" className="button-login">Login</button>  
